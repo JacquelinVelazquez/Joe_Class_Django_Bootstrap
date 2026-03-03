@@ -12,9 +12,9 @@ Permite crear y editar artículos. Si el usuario intenta guardar un artículo co
 - Se muestra una alerta general arriba (Bootstrap + `django.contrib.messages`)
 
 > Nota: La validación real sigue siendo del lado del servidor (Django). jQuery se usa como apoyo **estético** del lado del cliente.
-- Django (servidor) es quien manda en la validación real -
-- jQuery solo ayuda visualmente (no sustituye la validación del servidor) -
-- Bootstrap se encarga del diseño (formularios, botones, alerts) -
+- Django (servidor) es quien manda en la validación real 
+- jQuery solo ayuda visualmente (no sustituye la validación del servidor) 
+- Bootstrap se encarga del diseño (formularios, botones, alerts) 
 
 ## Requisitos técnicos (mínimo)
 - Python + pip
