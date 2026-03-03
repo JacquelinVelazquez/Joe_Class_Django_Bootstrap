@@ -1,7 +1,8 @@
 # Joe_Class_Django_Bootstrap
 
 Este repositorio contiene el proyecto Django Sunlin con una mejora específica: la integración de Bootstrap 5 y jQuery para que los errores de validación en formularios se vean claros y estéticos, sin quitar la validación real del servidor (Django).
-## La idea principal es que:
+
+La idea principal es que:
 - Django valida en el servidor (lo importante y obligatorio).
 - Bootstrap mejora la UI (inputs en rojo, mensajes debajo, alertas).
 - jQuery apoya con validación visual (solo estética: marcar vacíos, quitar rojo al escribir).
