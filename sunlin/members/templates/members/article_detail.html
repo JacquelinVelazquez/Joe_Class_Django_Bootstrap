@@ -1,0 +1,16 @@
+{% extends "members/base.html" %}
+
+{% block title %}{{ article.name }} | Sunlin{% endblock %}
+
+{% block content %}
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h1 class="h4">{{ article.name }}</h1>
+      <p class="text-body-secondary mb-0">{{ article.content|linebreaksbr }}</p>
+    </div>
+    <div class="card-footer bg-white d-flex gap-2">
+      <a class="btn btn-outline-secondary" href="{% url 'edit_article' article.pk %}">✏️ Editar</a>
+      <a class="btn btn-link" href="{% url 'all_articles' %}">⬅ Volver</a>
+    </div>
+  </div>
+{% endblock %}

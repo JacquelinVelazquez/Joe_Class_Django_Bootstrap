@@ -1,0 +1,23 @@
+{% extends "members/base.html" %}
+
+{% block title %}Artículos | Sunlin{% endblock %}
+
+{% block content %}
+  <div class="d-flex align-items-center justify-content-between mb-3">
+    <h1 class="h3 m-0">Artículos</h1>
+    <a class="btn btn-primary" href="{% url 'new_article' %}">➕ Nuevo</a>
+  </div>
+
+  {% if article_list %}
+    <div class="list-group shadow-sm">
+      {% for a in article_list %}
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+          <a class="text-decoration-none" href="{% url 'article_detail' a.pk %}">{{ a.name }}</a>
+          <a class="btn btn-outline-secondary btn-sm" href="{% url 'edit_article' a.pk %}">✏️ Editar</a>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="alert alert-info">No hay artículos todavía.</div>
+  {% endif %}
+{% endblock %}
